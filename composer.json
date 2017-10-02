@@ -1,0 +1,30 @@
+{
+    "name": "ncdfilho/torcidabahia",
+    "description": "Uma grande torcida, merece um grande site",
+    "authors": [
+        {
+            "name": "Newton Caroso Duarte Filho",
+            "email": "ncdfilho@gmail.com"
+        }
+    ],
+    "repositories" : [
+          {
+               "type" : "composer",
+               "url"  : "https://wpackagist.org"
+          },
+          {
+               "type" : "vcs",
+               "url" : "https://github.com/ncdfilho/Torcidabahia.git"
+          }
+     ],
+     "extra" : {
+          "installer-paths" : {
+               "wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
+               "wp-content/themes/{$name}/" : ["type:wordpress-theme"]
+          }
+     },
+    "minimum-stability": "dev",
+    "require": {
+         "wpackagist-plugin/wordpress-seo" : "5.*"
+    }
+}
