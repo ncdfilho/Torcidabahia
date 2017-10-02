@@ -23,10 +23,10 @@
 define('DB_NAME', 'zadmin_tbpontocom');
 
 /** MySQL database username */
-define('DB_USER', 'tbcom');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'egy3yjyza');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -92,6 +92,7 @@ define('WP_CONTENT_URL','/wp-content');
 
 define('DISALLOW_FILE_EDIT',true);
 define('AUTOMATIC_UPDATER_DISABLED',true);
+define('DISALLOW_FILE_MODS', true);
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
