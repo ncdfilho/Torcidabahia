@@ -1,0 +1,43 @@
+{
+    "name": "wordpress/skeleton",
+    "description": "core for wordpress",
+    "authors": [
+        {
+            "name": "Newton Duarte",
+            "email": "ncdfilho@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress/wordpress",
+                "type": "webroot",
+                "version": "4.9.2",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.9.2.zip"
+                }
+            }
+        },
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wordpress/wordpress": "4.9.2",
+        "fancyguy/webroot-installer": "1.0.0",
+	"yoast/wordpress-seo": "6.2",
+	"wpackagist-plugin/advanced-custom-fields": "4.4.2"
+    },
+    "extra": {
+        "webroot-dir": "cms",
+        "webroot-package": "wordpress/wordpress",
+        "installer-paths": {
+            "site/wp-content/plugins/{$name}/": ["type:wordpress-plugin"], 
+            "site/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+ 
+    }
+}
