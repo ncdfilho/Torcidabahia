@@ -201,6 +201,28 @@
         "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
     },
     {
+        "name": "wpackagist-theme/twentyfifteen",
+        "version": "1.6",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "svn",
+            "url": "https://themes.svn.wordpress.org/twentyfifteen/",
+            "reference": "1.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/theme/twentyfifteen.1.6.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-theme",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/themes/twentyfifteen/"
+    },
+    {
         "name": "xrstf/composer-php52",
         "version": "v1.0.20",
         "version_normalized": "1.0.20.0",

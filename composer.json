@@ -29,15 +29,15 @@
         "wordpress/wordpress": "4.9.2",
         "fancyguy/webroot-installer": "1.0.0",
 	"yoast/wordpress-seo": "6.2",
-	"wpackagist-plugin/advanced-custom-fields": "4.4.2"
+	"wpackagist-plugin/advanced-custom-fields": "4.4.2",
+	"wpackagist-theme/twentyfifteen": "1.6"
     },
     "extra": {
-        "webroot-dir": "cms",
+	"webroot-dir": "cms",
         "webroot-package": "wordpress/wordpress",
         "installer-paths": {
-            "site/wp-content/plugins/{$name}/": ["type:wordpress-plugin"], 
-            "site/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+            "../wp-content/plugins/{$name}/": ["type:wordpress-plugin"], 
+            "../wp-content/themes/{$name}/": ["type:wordpress-theme"]
         }
- 
     }
 }
